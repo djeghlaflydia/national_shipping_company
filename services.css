@@ -1,0 +1,220 @@
+body {
+    background-image: url(pic/back1.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+main {
+    margin: 30px;
+}
+
+.transparent-background {
+    background-color: rgba(177, 207, 250, 0.461); /* 0.5 représente 50% d'opacité */
+    padding: 10px;
+    border: 2px solid #120a30; /* Pour une meilleure visualisation de la div */
+    border-radius: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+#foo {
+    float: right;
+}
+
+#w {
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(48, 50, 158, 0.276), -3px -3px 4px rgba(51, 54, 219, 0.573);
+}
+
+/*pagination*/
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination a {
+    color: rgb(8, 2, 23);
+    text-decoration: none; /* pour enlever la ligne */
+    padding: 8px 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.taille{
+    width: 120px;
+    height: 20px;
+}
+#bout1,#bout2{
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: 0.5s; 
+    background-size: 200%;
+    background-image: linear-gradient(
+        to right,#313355,#4d7bdf,#313355
+    );
+    font-weight: bold;
+}
+#bout1:hover ,#bout2:hover{
+    background-position: right;
+}
+
+.pagination a.active {
+    background-color: rgb(186, 192, 236);
+    font-weight: bold;
+    border-radius: 5px;
+    width: 120px;
+    height: 20px;
+}
+
+.pagination a:not(.active) {
+    background-color: rgba(240, 248, 255, 0.863);
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: rgba(203, 203, 203, 0.336);
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    animation-name: animeGlow;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animeGlow {
+    50% {
+        box-shadow: 0px 0px 50px #f5f2f2;
+    }
+}
+
+/*photos*/
+.gal_center {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.gal {
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid rgb(16, 11, 74);
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    animation-name: animeGlow;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+#nashco {
+    width: 50px;
+    border: 2px solid rgb(16, 11, 74);
+    border-radius: 5px;
+    float: left;
+}
+
+.p {
+    text-align: center;
+    color: #000000;
+}
+
+/*.p1 {
+    text-align: center;
+    color: #00ffff;
+    color: #98FF98;
+}*/
+
+.p1 {
+    text-align: center;
+    font-size: 2em;
+    /*background: linear-gradient(to right, #ebeff7, #0088ffce, #00ffff);*/
+    background: linear-gradient(to right, #ed7e3d, #ff3434, #ed7e3d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*text-shadow: 3px 3px 4px rgba(247, 247, 251, 0), -3px -3px 4px rgba(52, 52, 98, 0.306);*/
+}
+
+/*services section*/
+#service {
+    color: aliceblue;
+    margin: 50px;
+}
+
+.centre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0; /* Adjust margin as needed */
+}
+
+.n1,
+.n2 {
+    flex: 1;
+    min-width: 300px; /* Minimum width for each item */
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.pics {
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.tc {
+    text-align: center;
+}
+.n1{
+    animation-name: slideleft;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+.n2{
+    animation-name: slideright;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@media (max-width: 800px) {
+    .n1,
+    .n2 {
+        flex: 100%;
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+@keyframes slideleft {
+    0% {
+        transform: translateX(300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideright {
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*avis*/
+.avis6{
+    size: 10px;
+    color: rgb(208, 206, 243);
+    text-decoration: none;
+}
+#avis3{
+    text-align: center;
+}
+.avis6:hover{
+    color: rgba(208, 206, 243, 0.628);
+}

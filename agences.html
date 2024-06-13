@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Shipping Company</title>
+    <link rel="icon" type="image/png" href="pic/image6.jpg">
+    <link rel="stylesheet" href="agences.css">
+    <script src="https://kit.fontawesome.com/1af288f764.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="transparent-background">
+        <h1 id="w">WELCOME TO NATIONAL SHIPPING COMPANY</h1>
+        <div class="gal_center">
+            <div class="gal">
+                <img src="pic/bla.jpg" alt="salad" width="150" height="100">
+            </div>
+            <div class="gal">
+                <img src="pic/image7.jpg" alt="salad" width="150" height="100">
+            </div>
+            <div class="gal">
+                <img src="pic/image6.jpg" alt="salad" width="150" height="100">
+            </div>
+        </div>
+        <!--pagination-->
+        <div class="pagination">
+            <a href="Accueil.html#form" class="taille" id="bout1">contact</a>
+            <a href="services.html"><</a>
+            <a href="Accueil.html" class="taille">Accueil</a>
+            <a href="services.html" class="taille">Nos services</a>
+            <a href="agences.html" class="active" class="taille">Nos Agences</a>
+            <a href="Accueil.html">></a>
+            <a href="cotation.html" class="taille" id="bout2">cotation en lignes</a>
+        </div>
+    </header>
+
+
+
+    <main> 
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <input type="radio" name="slider" id="slide6">
+            
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+                            
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <h2>AGENCE D'ALGER</h2>
+                                    <h3>01 RUE DES FRERES OUKID SQUARE PORT SAID ALGER</h3>
+                                    <p>direc-alg@nashco.com.dz</p>
+                                    <p>com-alg@nashco.com.dz</p>
+                                    <p>+213 21 43 94 46</p>
+                                </div>
+                            </div>
+
+                            <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <h2>AGENCE D'ORAN</h2>
+                                    <h3>08 RUE TAMI ABDELKADER MIRAMAR ORAN</h3>
+                                    <p>direc-oran@nashco.com.dz</p>
+                                    <p>com-oran@nashco.com.dz</p>
+                                    <p>+213 41 41 59 58</p>
+                                </div>
+                            </div>
+
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <h2>AGENCE D'ANNABA</h2>
+                                    <h3>BOULEVARD BEN ADELMALEK RAMDANE BP N° 172 ANNABA</h3>
+                                    <p>direc-anb@nashco.com.dz</p>
+                                    <p>com-anb@nashco.com.dz</p>
+                                    <p>+213 38 86 71 56</p>
+                                </div>
+                            </div>
+
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <h2>AGENCE DE SKIKDA</h2>
+                                    <h3>ZONE DE DEPOT HAMROUCHE HAMOUDI BP N°186 SKIKDA</h3>
+                                    <p>direc-skd@nashco.com.dz</p>
+                                    <p>com-skd@nashco.com.dz</p>
+                                    <p>+213 38 93 17 97</p>
+                                </div>
+                            </div>
+
+                            <div class="slide slide_5">
+                                <div class="slide-content">
+                                    <h2>AGENCE DE BEJAIA</h2>
+                                    <h3>Résidence la plaine BEJAIA VILLE</h3>
+                                    <p>direc-bej@nashco.com.dz</p>
+                                    <p>com-bej@nashco.com.dz</p>
+                                    <p>+213 34 09 01 21</p>
+                                </div>
+                            </div>
+
+                            <div class="slide slide_6">
+                                <div class="slide-content">
+                                    <h2>AGENCE DE MOSTAGANEM</h2>
+                                    <h3>COOPERATIVE COLONEL AMIROUCHE N° B 01 MOSTAGANEM</h3>
+                                    <p>direc-mos@nashco.com.dz</p>
+                                    <p>com-mos@nashco.com.dz</p>
+                                    <p>+213 45 41 78 76</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                </div>
+                
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                </div>
+        </div>
+
+    </main>
+
+    <br>
+    <footer class="transparent-background">
+        <img src="pic/image2.jpg" id="nashco" alt="Nashco">
+        <a id="foo" target="_blank" href="https://www.facebook.com/p/National-Shipping-Company-Nashco-100083268496180/">
+          <i class="fa-brands fa-facebook fa-3x" style="color: #03217c;"></i>
+        </a>
+        <p class="p"><big><b>EPE.NASHCO.Spa: 50 Bis, Route de Gué de Constantine, Appreval - Kouba- Alger</b></big></p>
+        <p class="p"><big><b>Tous droits réservés © [ contact@nashco.com.dz] 2024</b></big></p>
+      </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

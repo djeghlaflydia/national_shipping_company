@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Shipping Company</title>
+    <link rel="icon" type="image/png" href="pic/image6.jpg">
+    <link rel="stylesheet" href="cotation.css">
+    <script src="https://kit.fontawesome.com/1af288f764.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="transparent-background">
+        <h1 id="w">WELCOME TO NATIONAL SHIPPING COMPANY</h1>
+        <div class="gal_center">
+            <div class="gal">
+                <img src="pic/bla.jpg" alt="salad" width="150" height="100">
+            </div>
+            <div class="gal">
+                <img src="pic/image7.jpg" alt="salad" width="150" height="100">
+            </div>
+            <div class="gal">
+                <img src="pic/image6.jpg" alt="salad" width="150" height="100">
+            </div>
+        </div>
+        <!--pagination-->
+        <div class="pagination">
+            <a href="Accueil.html#form" class="taille" id="bout1">contact</a>
+            <a href="Accueil.html"><</a>
+            <a href="Accueil.html" class="taille">Accueil</a>
+            <a href="services.html" class="taille">Nos services</a>
+            <a href="agences.html" class="taille">Nos Agences</a>
+            <a href="Accueil.html">></a>
+            <a href="cotation.html" class="taille" id="bout2">cotation en lignes</a>
+        </div>
+    </header>
+
+
+    <main> 
+        <br>
+        <h1 class="p1">-- Cotation en ligne --</h1>
+        <section class="contact">
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <label class="label">Nom :</label><br>
+                        <input type="text" placeholder="Votre nom" id="name" class="item required" autocomplete="off">
+                        <div class="error-txt">champ obligatoire</div>
+                    </div>
+    
+                    <div class="input-field field">
+                        <label class="label">Raison sociale :</label><br>
+                        <input type="text" placeholder="Nom de la societe" id="raison" class="item required" autocomplete="off">
+                        <div class="error-txt">champ obligatoire</div>
+                    </div>
+                </div>
+    
+                <div class="input-box">
+                    <div class="input-field field">
+                        <label class="label">Numéro de téléphone :</label><br>
+                        <input type="tel" placeholder="Votre numéro de téléphone" id="telephone" class="item required" autocomplete="off">
+                        <div class="error-txt">champ obligatoire</div>
+                    </div>
+    
+                    <div class="input-field field">
+                        <label class="label">E-mail :</label><br>
+                        <input type="email" placeholder="Votre E-mail" id="email" class="item required" autocomplete="off">
+                        <div class="error-txt email">champ obligatoire</div>
+                    </div>
+                </div>
+    
+                <div class="input-box">
+                    <div class="input-field field">
+                        <label class="label">port de chargement :</label><br>
+                        <select id="POL" autocomplete="off" class="item required select-Box">
+                            <option value="" class="choix" selected disabled hidden>POL</option>
+                            <option class="col" value="Alger">Alger</option>
+                            <option class="col" value="Oran">Oran</option>
+                            <option class="col" value="Annaba">Annaba</option>
+                            <option class="col" value="Skikda">Skikda</option>
+                            <option class="col" value="Bejaia">Bejaia</option>
+                            <option class="col" value="Mostaganem">Mostaganem</option>
+                            <option class="col" value="Djen-Djen">Djen-Djen</option>
+                            <option class="col" value="Genes">Genes</option>
+                            <option class="col" value="Marina Di Carrara">Marina Di Carrara</option>
+                            <option class="col" value="Marseille">Marseille</option>
+                            <option class="col" value="Barcelone">Barcelone</option>
+                            <option class="col" value="Valence">Valence</option>
+                            <option class="col" value="Nouakchott">Nouakchott</option>
+                            <option class="col" value="Dakar">Dakar</option>
+                            <option class="col" value="Anvers">Anvers</option>
+                            <option class="col" value="Hambourg">Hambourg</option>
+                            <option class="col" value="Leixoes">Leixoes</option>
+                        </select>
+                        <div class="error-txt">champ obligatoire</div>
+                    </div>
+    
+                    <div class="input-field field">
+                        <label class="label">port de déchargement :</label><br>
+                        <select id="POD" autocomplete="off" class="item required select-Box">
+                            <option value="" class="choix" selected disabled hidden>POD</option>
+                            <option class="col" value="Alger">Alger</option>
+                            <option class="col" value="Oran">Oran</option>
+                            <option class="col" value="Annaba">Annaba</option>
+                            <option class="col" value="Skikda">Skikda</option>
+                            <option class="col" value="Bejaia">Bejaia</option>
+                            <option class="col" value="Mostaganem">Mostaganem</option>
+                            <option class="col" value="Djen-Djen">Djen-Djen</option>
+                            <option class="col" value="Genes">Genes</option>
+                            <option class="col" value="Marina Di Carrara">Marina Di Carrara</option>
+                            <option class="col" value="Marseille">Marseille</option>
+                            <option class="col" value="Barcelone">Barcelone</option>
+                            <option class="col" value="Valence">Valence</option>
+                            <option class="col" value="Nouakchott">Nouakchott</option>
+                            <option class="col" value="Dakar">Dakar</option>
+                            <option class="col" value="Anvers">Anvers</option>
+                            <option class="col" value="Hambourg">Hambourg</option>
+                            <option class="col" value="Leixoes">Leixoes</option>
+                        </select>
+                        <div class="error-txt">champ obligatoire</div>
+                    </div>
+                </div>
+    
+                <div class="input-box">
+                    <div class="input-field field">
+                        <label class="label">Conditionnement :</label><br>
+                        <select id="c" autocomplete="off" class="item required select-Box">
+                            <option value="" id="con" class="choix" selected disabled hidden>Conditionnement</option>
+                            <option class="col" value="TC 20'">TC 20'</option>
+                            <option class="col" value="TC 40'">TC 40'</option>
+                            <option class="col" value="Conventionnel">Conventionnel</option>
+                            <option class="col" value="Roulant">Roulant</option>
+                        </select>
+                        <div class="error-txt">champ obligatoire</div>
+                    </div>
+    
+                    <div class="input-field field">
+                        <label class="label">Type :</label><br>
+                        <select id="t" autocomplete="off" class="item select-Box">
+                            <option value="" class="choix" selected disabled hidden>Type</option>
+                            <option class="col" value="Dangereuse">Dangereuse</option>
+                            <option class="col" value="Non dangereuse">Non dangereuse</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="textarea-field field">
+                    <label>Description de la marchandise : </label><br>
+                    <textarea id="message1" placeholder="Nature de la marchandise, Type d’emballage, Dimensions, Poids , Volume ." class="item"></textarea>
+                </div>
+                <div class="textarea-field field">
+                    <label>Commentaires : </label><br>
+                    <textarea id="message2" placeholder="Vos Commentaires" class="item"></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    
+
+    <br>
+    <footer class="transparent-background">
+        <img src="pic/image2.jpg" id="nashco" alt="Nashco">
+        <a id="foo" target="_blank" href="https://www.facebook.com/p/National-Shipping-Company-Nashco-100083268496180/">
+          <i class="fa-brands fa-facebook fa-3x" style="color: #03217c;"></i>
+        </a>
+        <p class="p"><big><b>EPE.NASHCO.Spa: 50 Bis, Route de Gué de Constantine, Appreval - Kouba- Alger</b></big></p>
+        <p class="p"><big><b>Tous droits réservés © [ contact@nashco.com.dz] 2024</b></big></p>
+      </footer>
+
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="cotation.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectBoxes = document.getElementsByClassName('select-Box');
+            console.log (selectBoxes);
+            // Convert HTMLCollection to array
+            Array.from(selectBoxes).forEach(selectBox => {
+                selectBox.addEventListener('change', function() {
+                    if (this.value === "") {
+                        this.classList.remove('valid');
+                    } else {
+                        this.classList.add('valid');
+                    }
+                });
+
+                // Initial call to set the color on page load
+                if (selectBox.value !== "") {
+                    selectBox.classList.add('valid');
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>

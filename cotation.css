@@ -1,0 +1,228 @@
+:root{
+    --white:#FFFF;
+    --grey:#ffffff55;
+}
+
+
+body{
+    background-image: url(pic/back1.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+main{margin: 30px;}
+
+.transparent-background {
+    /*background-image: url(pic/photo8.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;*/
+    background-color: rgba(177, 207, 250, 0.461); /* 0.5 représente 50% d'opacité */
+    padding: 10px;
+    border: 2px solid #120a30; /* Pour une meilleure visualisation de la div */
+    border-radius: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+#foo{float: right;}
+
+#w{
+    text-align: center; 
+    text-shadow: 3px 3px 4px rgba(48, 50, 158, 0.276), -3px -3px 4px rgba(51, 54, 219, 0.573);
+}
+
+/*pagination*/
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination a {
+    color: rgb(8, 2, 23);
+    text-decoration: none; /* pour enlever la ligne */
+    padding: 8px 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.taille{
+    width: 120px;
+    height: 20px;
+}
+#bout1,#bout2{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-size: 200%;
+    transition: 0.5s; 
+    background-image: linear-gradient(
+        to right,#313355,#4d7bdf,#313355
+    );
+    font-weight: bold;
+}
+#bout1:hover ,#bout2:hover{
+    background-position: right;
+}
+
+.pagination a.active {
+    background-color: rgb(186, 192, 236);
+    font-weight: bold;
+    border-radius: 5px;
+    width: 120px;
+    height: 20px;
+}
+
+.pagination a:not(.active) {
+    background-color: rgba(240, 248, 255, 0.863);
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: rgba(203, 203, 203, 0.336);
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    animation-name: animeGlow;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animeGlow {
+    50% {
+        box-shadow: 0px 0px 50px #f5f2f2;
+    }
+}
+/*photos*/
+.gal_center{
+    justify-content: space-between;
+    text-align: center;
+}
+.gal{
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid rgb(16, 11, 74);
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    animation-name: animeGlow;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+#nashco{
+    width:50px;
+    border: 2px solid rgb(16, 11, 74);
+    border-radius: 5px;
+    float:left;
+}
+.p{
+    text-align: center;
+    color: #000000;
+}
+
+.contact{
+    color: #f5f2f2;
+}
+.p1 {
+    text-align: center;
+    font-size: 2em;
+    /*background: linear-gradient(to right, #ebeff7, #0088ffce, #00ffff);*/
+    background: linear-gradient(to right, #ed7e3d, #ff3434, #ed7e3d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*text-shadow: 3px 3px 4px rgba(247, 247, 251, 0), -3px -3px 4px rgba(52, 52, 98, 0.306);*/
+}
+
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*flex-wrap: wrap;*/
+}
+.contact form{
+    width: 80%;
+
+    /*display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    min-width: 100px;*/
+}
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+
+    /*display: flex;
+    
+
+    flex: 1;
+    min-width: 100px;*/
+}
+.field .item{
+    width: 95%;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid rgb(2, 141, 172);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+    margin-bottom: 30px;
+    font-family: 'Arial';
+}
+.field.error .item:not(#message1):not(#message2):not(#t){
+    border-color: #d93025;
+}
+.col{
+    background-color: #09011a;
+}
+/*.field .item::placeholder{
+    couleur du contenue pas defaut
+}*/
+.field .error-txt{
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -20px 0 30px;
+    display: none;
+}
+.field.error .error-txt{
+    display: block;
+}
+.input-box .input-field{
+    width: 45%;
+}
+#POL,#POD,#c,#t{
+    width: 100%;
+    color: var(--grey);
+}
+#POL.valid, #POD.valid, #c.valid, #t.valid{
+    color: var(--white);
+}
+option{
+    color: var(--white);
+}
+form button{
+    padding: 12px, 32px;
+    background: rgb(0, 182, 223);/*#0ef*/
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(2, 141, 172);
+    font-size: 27px;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+} 
+form button:hover{
+    box-shadow: none;
+}
+

@@ -17,10 +17,11 @@ Welcome to my project for creating a website for an Algerian business! This proj
 - **Responsive Design**: Ensures compatibility and optimal viewing experience across various devices.
 - **Interactive Elements**: Use of JavaScript for dynamic elements such as sliders, carousels, or interactive maps.
 
-##Technologies Used
--**HTML**: Structure and content of the web pages.
--**CSS**: Styling and layout of the website for visual appeal.
--**JavaScript**: Enhances interactivity and dynamic behavior of the website.
+## Technologies Used
+
+- **HTML**: Used for structuring and creating content for web pages.
+- **CSS**: Used for styling and enhancing the visual layout of the website.
+- **JavaScript**: Used to add interactivity and dynamic behavior to the website.
 
 
 Thank you for exploring my Algerian Business Website project! This project has been an enriching experience in web development, focusing on creating a professional and user-friendly online presence for an Algerian business.

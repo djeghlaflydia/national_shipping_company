@@ -2,7 +2,7 @@
 
 ## Introduction
 Welcome to my project for creating a website for an Algerian business! This project aims to develop a comprehensive website that showcases the services, products, and mission of the business. It incorporates HTML, CSS, and JavaScript to create a dynamic and visually appealing online presence.
-here is the link to see the project : https://djeghlaflydia.github.io/web/
+here is the link to see the project on PC (the phone version is in progress): https://djeghlaflydia.github.io/web/
 
 ## Features
 - **Homepage**: Introduction to the business with featured content and highlights.
